@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import AboutMe from './components/AboutMe/AboutMe'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className='my-2 mx-3'>
-      <AboutMe/>
+    <div className='my-3 mx-5'>
+      {/* <AboutMe/> */}
+     <Navbar/>
     </div>
   )
 }
