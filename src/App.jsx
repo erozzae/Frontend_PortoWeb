@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavigationBar/>
-      <Container className="my-2 border border-primary">
+      <Container className="my-3">
         <AboutMe />
       </Container>
     </>
