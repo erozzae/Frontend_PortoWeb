@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import AboutMe from './components/AboutMe/AboutMe'
-import Navbar from './components/Navbar/Navbar'
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 function App() {
   return (
-    <div className='my-3 mx-5'>
-      {/* <AboutMe/> */}
-     <Navbar/>
-    </div>
-  )
+    <Container className="my-5 border border-primary">
+      <AboutMe/>
+    </Container>
+  );
 }
 
-export default App
+export default App;

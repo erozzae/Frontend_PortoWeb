@@ -1,9 +1,10 @@
 import React from "react";
+import { Col, Row, Button, Image } from "react-bootstrap";
 
 function AboutMe() {
   return (
-    <div className="row">
-      <div className="about_me col-12 col-sm-12 col-md-6 border border-primary">
+    <Row>
+      <Col className="border border-primary" sm={12} md={6}>
         <h1>Hi! Iam Rosyihan Fullstack Developer</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet omnis
@@ -12,21 +13,16 @@ function AboutMe() {
           quisquam quam libero blanditiis atque ipsa natus recusandae. Totam,
           quam cupiditate?
         </p>
-        <button type="button" class="btn btn-primary ">
-          Download CV
-        </button>
-      </div>
+        <Button variant="primary">Download CV</Button>
+      </Col>
 
-      <div className="photo col-12 col-sm-12 col-md-6 border border-primary text-center">
-        <img
+      <Col className="d-flex border border-primary justify-content-center align-items-center" sm={12} md={6}>
+        <Image
           src="https://images.immediate.co.uk/production/volatile/sites/3/2024/05/How-many-Pokemon-are-there-6434211.jpg?quality=90&resize=980,654"
-          alt="pkn"
-          style={{
-            width: `300px`,
-          }}
+          style={{ width:"300px" }}
         />
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 }
 
