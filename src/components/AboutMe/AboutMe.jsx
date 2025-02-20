@@ -17,9 +17,9 @@ function AboutMe() {
       </Col>
 
       <Col className="d-flex border border-primary justify-content-center align-items-center" sm={12} md={6}>
-        <Image
+        <Image 
           src="https://images.immediate.co.uk/production/volatile/sites/3/2024/05/How-many-Pokemon-are-there-6434211.jpg?quality=90&resize=980,654"
-          style={{ width:"300px" }}
+          style={{ width:"300px" }} rounded 
         />
       </Col>
     </Row>
