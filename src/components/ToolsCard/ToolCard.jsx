@@ -15,8 +15,8 @@ function ToolCard({ image, title, description }) {
           />
         </Col>
         <Col className="d-flex flex-column justify-content-center" xs="9">
-          <Card.Text className={`${styles.button} px-2 mb-0 fs-6 fw-semibold`}>{title}</Card.Text>
-          <Card.Text className={`${styles.button} px-2 mb-0 fs-6 fw-medium`}>
+          <Card.Text className="fs-6 px-2 mb-0 fw-semibold">{title}</Card.Text>
+          <Card.Text className={`${styles.fs_normal} px-2 mb-0 fw-medium`}>
             {description}
           </Card.Text>
         </Col>

@@ -4,6 +4,7 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import AboutMe from "./components/AboutMe/AboutMe";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import SkillToolsLayout from "./layouts/SkillToolsLayout";
+import PortofoliosLayout from './layouts/PortofoliosLayout';
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
       <Container className="my-4">
         <AboutMe />
         <SkillToolsLayout/>
+        <PortofoliosLayout/>
       </Container>
     </>
   );

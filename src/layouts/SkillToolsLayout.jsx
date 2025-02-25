@@ -36,10 +36,16 @@ const dummyData = [
   },
 ];
 
+const dummySubContentHeader = {
+  subtitle: "Esesential Tech I use",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda ratione laborum dolor officiis quisquam.",
+};
+
 function SkillToolsLayout() {
   return (
     <Container className="mt-1 border border-primary">
-      <SubContentHeader/>
+      <SubContentHeader subtitle={dummySubContentHeader.subtitle} description={dummySubContentHeader.description} />
       <Row>
         {dummyData.map((item, index) => (
           <Col key={index} sm={6} md={6} lg={3} className="col-12 mb-3">

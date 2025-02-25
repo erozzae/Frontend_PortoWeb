@@ -1,13 +1,13 @@
 import React from 'react'
 
-function SubContentHeader() {
+function SubContentHeader({subtitle,description}) {
   return (
     <>
     <h2>
-        Esesential Tech I use
+       {subtitle}
     </h2>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda ratione laborum dolor officiis quisquam.
+        {description}
     </p>
     </>
   )
