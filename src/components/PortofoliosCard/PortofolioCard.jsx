@@ -4,11 +4,11 @@ import styles from "../../styles/global.module.css";
 
 function PortofolioCard({title,image,description}) {
   return (
-    <Card className="border border-primary" style={{ width: "18rem" }}>
+    <Card className="border border-primary" style={{ width: "100%" }}>
       <div className="pt-3 px-3 pb-0">
         <Card.Img className="rounded"
           src={image} 
-          style={{ aspectRatio:'16/9', objectFit:'cover' }}
+          style={{ maxWidth:'100%', aspectRatio:'16/9', objectFit:'cover' }}
         />
       </div>
       <Card.Body className="d-flex justify-content-between">
