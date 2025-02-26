@@ -4,16 +4,11 @@ import {
   Image,
   Nav,
   Navbar,
-  NavbarBrand,
-  NavbarCollapse,
-  NavbarToggle,
-  NavLink,
 } from "react-bootstrap";
 import Logo from "../../assets/images/monster.png";
 
 function NavigationBar() {
   return (
-    <>
       <Navbar expand="lg" className="bg-body-tertiary border border-primary">
         <Container className="border border-primary">
           <Navbar.Brand className="border border-primary border border-primary">
@@ -26,11 +21,12 @@ function NavigationBar() {
               <Nav.Link href="#">Home</Nav.Link>
               <Nav.Link href="#">Skills</Nav.Link>
               <Nav.Link href="#">Portofolios</Nav.Link>
+              <Nav.Link href="#">Contact Me</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+  
   );
 }
 
