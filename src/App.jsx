@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import SkillToolsLayout from "./layouts/SkillToolsLayout";
 import PortofoliosLayout from './layouts/PortofoliosLayout';
+import ContactmeLayout from "./layouts/ContactmeLayout";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <AboutMe />
         <SkillToolsLayout/>
         <PortofoliosLayout/>
+        <ContactmeLayout/>
       </Container>
     </>
   );

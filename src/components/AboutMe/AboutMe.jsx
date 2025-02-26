@@ -27,6 +27,11 @@ function AboutMe() {
                   <i className="bx bxl-github"></i>
                 </a>
               </div>
+              <div className="border border-primary ms-3 p-1 rounded">
+                <a href="#" className="">
+                <i className='bx bxl-gmail'></i>
+                </a>
+              </div>
             </div>
           </div>
         </Col>
