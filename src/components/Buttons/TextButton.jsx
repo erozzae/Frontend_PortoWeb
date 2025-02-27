@@ -7,7 +7,7 @@ const btnStyle = {
 
 function TextButton({ text }) {
   return (
-    <div className="">
+    <div className="text-btn">
       <a className="fs-1 fw-medium" href="#" style={btnStyle}>
         {text} <i className="bx bx-right-arrow-circle align-middle"></i>
       </a>

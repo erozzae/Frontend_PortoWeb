@@ -9,13 +9,13 @@ function MessageForm() {
           <Col xs={12} lg={6}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
+              <Form.Control className="f-input" type="email" placeholder="name@example.com" />
             </Form.Group>
           </Col>
           <Col xs={12} lg={6}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
+              <Form.Control className="f-input" type="email" placeholder="name@example.com" />
             </Form.Group>
           </Col>
         </Row>

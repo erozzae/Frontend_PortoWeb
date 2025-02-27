@@ -1,0 +1,16 @@
+h1,
+h2,
+.n-brand,
+.text-btn {
+  font-family: "Alegreya", serif;
+  /* font-weight: bold; */
+  font-style: normal;
+}
+
+p,
+.nav-link,
+.card-ttl,
+.form-label,
+.f-input {
+  font-family: "Alegreya Sans", serif;
+}

@@ -11,7 +11,7 @@ function NavigationBar() {
   return (
       <Navbar expand="lg" className="bg-body-tertiary border border-primary">
         <Container className="border border-primary">
-          <Navbar.Brand className="border border-primary border border-primary">
+          <Navbar.Brand className="n-brand border border-primary border border-primary">
             <Image className="me-2" style={{ width: "50px" }} src={Logo} />
             Bootstrap
           </Navbar.Brand>
