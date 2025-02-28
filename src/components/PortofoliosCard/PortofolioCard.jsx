@@ -4,7 +4,7 @@ import styles from "../../styles/global.module.css";
 
 function PortofolioCard({title,image,description}) {
   return (
-    <Card className="border border-primary" style={{ width: "100%" }}>
+    <Card  style={{ width: "100%" }}>
       <div className="pt-3 px-3 pb-0">
         <Card.Img className="rounded"
           src={image} 

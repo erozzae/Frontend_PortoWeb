@@ -13,11 +13,11 @@ function ContactmeLayout() {
   return (
     <Container className="mt-1">
       <Row>
-        <Col className="d-flex flex-column justify-content-between border border-primary" xs={12} md={6}>
+        <Col className="d-flex flex-column justify-content-between" xs={12} md={6}>
             <SubContentHeader  subtitle={dummySubContentHeader.subtitle} description={dummySubContentHeader.description}/>
             <TextButton text={"Let's Connect"}/>
         </Col>  
-        <Col className="border border-primary" xs={12} md={6}>
+        <Col  xs={12} md={6}>
           <MessageForm />
         </Col>
       </Row>

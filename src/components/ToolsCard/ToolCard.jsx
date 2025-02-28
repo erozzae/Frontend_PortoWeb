@@ -4,7 +4,7 @@ import styles from "../../styles/global.module.css"
 
 function ToolCard({ image, title, description }) {
   return (
-    <Card className="p-2 border border-primary shadow-sm" style={{ width: "100%" }}>
+    <Card className="p-2 shadow-sm" style={{ width: "100%" }}>
       <Row className="g-0">
         <Col className="d-flex align-items-center" xs="3">
           <Image

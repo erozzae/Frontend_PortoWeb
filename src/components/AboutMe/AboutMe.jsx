@@ -3,9 +3,9 @@ import { Col, Row, Button, Image, Container } from "react-bootstrap";
 
 function AboutMe() {
   return (
-    <Container className="border border-primary">
+    <Container>
       <Row>
-        <Col className="border border-primary mb-3" sm={12} md={6}>
+        <Col className="mb-3" sm={12} md={6}>
           <h1>Hi! Iam Rosyihan Fullstack Developer</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet omnis
