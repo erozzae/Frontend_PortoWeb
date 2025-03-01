@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Image, Nav, Navbar } from "react-bootstrap";
 import Logo from "../../assets/images/monster.png";
+import styles from "../../styles/btnAnimNav.module.css";
 
 function NavigationBar() {
   return (
@@ -16,10 +17,33 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav className="">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">Skills</Nav.Link>
-            <Nav.Link href="#">Portofolios</Nav.Link>
-            <Nav.Link href="#">Contact Me</Nav.Link>
+            <Nav.Link className={`${styles.btnWrapper} me-1 rounded`} href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Home
+            </Nav.Link>
+            <Nav.Link className={`${styles.btnWrapper} me-1 rounded`} href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>Skills
+            </Nav.Link>
+            <Nav.Link className={`${styles.btnWrapper} me-1 rounded`} href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Portofolios
+            </Nav.Link>
+            <Nav.Link className={`${styles.btnWrapper} me-1 rounded`} href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Contact Me
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
