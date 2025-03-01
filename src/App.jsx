@@ -9,7 +9,7 @@ import ContactmeLayout from "./layouts/ContactmeLayout";
 import Footer from "./components/Footer/Footer";
 function App() {
   return (
-    <>
+    <div>
       <NavigationBar />
       <Container className="my-4">
         <AboutMe />
@@ -18,7 +18,7 @@ function App() {
         <ContactmeLayout />
       </Container>
       <Footer />
-    </>
+    </div>
   );
 }
 

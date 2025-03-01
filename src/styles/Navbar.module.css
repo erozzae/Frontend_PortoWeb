@@ -1,0 +1,11 @@
+.navWrapper {
+  position: fixed;
+  top: 3rem;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(42, 43, 56, 0.5);
+  backdrop-filter: blur(104px);
+
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 0 0 15px rgba(33, 150, 243, 0.3);
+}

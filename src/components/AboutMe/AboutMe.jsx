@@ -3,7 +3,7 @@ import { Col, Row, Button, Image, Container } from "react-bootstrap";
 
 function AboutMe() {
   return (
-    <Container>
+    <Container style={{ marginTop:"10rem" }}>
       <Row>
         <Col className="mb-3" sm={12} md={6}>
           <h1>Hi! Iam Rosyihan Fullstack Developer</h1>
