@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
+import styles from "../../styles/global.module.css";
 
 function MessageForm() {
   return (
@@ -28,7 +29,7 @@ function MessageForm() {
             <Form.Control as="textarea" rows={3} />
           </Form.Group>
           <div className="px-2">
-            <Button className="w-100" variant="primary">Submit</Button>
+            <Button className={`${styles.btnCustomPrimary} w-100`}>Submit</Button>
           </div>
         </Row>
       </Form>
