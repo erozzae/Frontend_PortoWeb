@@ -2,8 +2,8 @@
   font-size: 0.9rem;
 }
 
-.fsBigger{
-    font-size: 1rem;
+.fsBigger {
+  font-size: 1rem;
 }
 
 .btnCustomPrimary {
@@ -13,6 +13,13 @@
 
 .iconBorderPrimary {
   box-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 0 0 15px rgba(33, 150, 243, 0.3);
+}
+
+.cardBorderSecondary {
+  background: rgba(42, 43, 56, 0.5);
+  backdrop-filter: blur(104px);
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 0 0 15px rgba(33, 150, 243, 0.3);
+  border: none;
 }
 
 .spanTextCustomGradienAnim {
@@ -34,4 +41,3 @@
     background-position: 0% 50%;
   }
 }
-
