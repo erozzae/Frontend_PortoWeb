@@ -1,3 +1,37 @@
 .fs_normal {
-    font-size:0.9rem;
+  font-size: 0.9rem;
 }
+
+.fsBigger{
+    font-size: 1rem;
+}
+
+.btnCustomPrimary {
+  background: #2196f3;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 0 0 15px rgba(33, 150, 243, 0.3);
+}
+
+.iconBorderPrimary {
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 0 0 15px rgba(33, 150, 243, 0.3);
+}
+
+.spanTextCustomGradienAnim {
+  background: linear-gradient(-45deg, #2196f3, #cf59e6, #2196f3, #cf59e6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradientAnimation 3s infinite linear;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
