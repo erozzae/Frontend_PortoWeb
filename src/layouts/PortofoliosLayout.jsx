@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import PortofolioCard from "./../components/PortofoliosCard/PortofolioCard";
 import SubContentHeader from "../components/SubContentHeader/SubContentHeader";
+import styles from "./../styles/global.module.css";
 
 const dummyData = [
   {
@@ -55,13 +56,13 @@ function PortofoliosLayout() {
       <Tab.Container defaultActiveKey="all">
         <Nav variant="tabs" className="justify-content-center">
           <Nav.Item>
-            <Nav.Link eventKey="all">Semua Project</Nav.Link>
+            <Nav.Link eventKey="all" style={{ color:"white" }}>Semua Project</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="real">Real Project</Nav.Link>
+            <Nav.Link eventKey="real" style={{ color:"white" }}>Real Project</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="mini">Mini Project</Nav.Link>
+            <Nav.Link eventKey="mini" style={{ color:"white" }}>Mini Project</Nav.Link>
           </Nav.Item>
         </Nav>
 

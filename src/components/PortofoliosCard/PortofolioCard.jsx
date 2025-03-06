@@ -4,7 +4,7 @@ import styles from "../../styles/global.module.css";
 
 function PortofolioCard({title,image,description}) {
   return (
-    <Card  style={{ width: "100%" }}>
+    <Card className={`${styles.cardBorderPrimary}`}  style={{ width: "100%" }}>
       <div className="pt-3 px-3 pb-0">
         <Card.Img className="rounded"
           src={image} 
@@ -21,7 +21,7 @@ function PortofolioCard({title,image,description}) {
           </Card.Text>
         </div>
         <div className="d-flex flex-column justify-content-center">
-          <Button size="sm">
+          <Button className={`${styles.btnCustomPrimary}`} size="sm">
             <i className="bx bxs-right-arrow-square"></i>
           </Button>
         </div>
