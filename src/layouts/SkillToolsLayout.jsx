@@ -44,7 +44,7 @@ const dummySubContentHeader = {
 
 function SkillToolsLayout() {
   return (
-    <Container className="mt-1">
+    <Container className="mt-1 mb-2">
       <SubContentHeader subtitle={dummySubContentHeader.subtitle} description={dummySubContentHeader.description} />
       <Row>
         {dummyData.map((item, index) => (

@@ -48,7 +48,7 @@ const dummySubContentHeader = {
 
 function PortofoliosLayout() {
   return (
-    <Container className="shadow-sm mt-1">
+    <Container className="shadow-sm mt-1 mb-2">
       <SubContentHeader
         subtitle={dummySubContentHeader.subtitle}
         description={dummySubContentHeader.description}

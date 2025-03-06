@@ -4,7 +4,7 @@ import { Col, Row, Button, Image, Container } from "react-bootstrap";
 
 function AboutMe() {
   return (
-    <Container className="" style={{ marginTop: "10rem" }}>
+    <Container className="mb-2" style={{ marginTop: "8rem" }}>
       <Row>
         <Col className="mb-3" sm={12} md={8}>
           <h1 style={{ fontSize:"4rem" }} className={`fw-bold`}>Hi! I am <span className={styles.spanTextCustomGradienAnim}>Rosyihan</span>, a <span >Fullstack Developer.</span></h1>
