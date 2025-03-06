@@ -8,7 +8,7 @@ const linkStyle = {
 
 function Footer() {
   return (
-    <footer className="bg-dark text-light py-4 mt-2">
+    <footer className="bg-dark text-light py-4">
       <Container className="text-center">
         <Row>
           <Col md={6} className="mb-3 mb-md-0">
