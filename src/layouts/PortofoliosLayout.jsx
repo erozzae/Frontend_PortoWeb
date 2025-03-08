@@ -48,13 +48,13 @@ const dummySubContentHeader = {
 
 function PortofoliosLayout() {
   return (
-    <Container className="shadow-sm mt-1 mb-2">
+    <Container className="shadow-sm my-1">
       <SubContentHeader
         subtitle={dummySubContentHeader.subtitle}
         description={dummySubContentHeader.description}
       />
       <Tab.Container defaultActiveKey="all">
-        <Nav variant="tabs" className="justify-content-center">
+        <Nav variant="tabs" className="justify-content-center mb-4">
           <Nav.Item>
             <Nav.Link eventKey="all" style={{ color:"white" }}>Semua Project</Nav.Link>
           </Nav.Item>
@@ -70,7 +70,7 @@ function PortofoliosLayout() {
           <Tab.Pane eventKey="all">
             <Row>
               {dummyData.map((item, index) => (
-                <Col className="mb-3" key={index} sm={12} md={6} lg={4}>
+                <Col className="mb-4" key={index} sm={12} md={6} lg={4}>
                   <PortofolioCard
                     image={item.image}
                     title={item.title}
