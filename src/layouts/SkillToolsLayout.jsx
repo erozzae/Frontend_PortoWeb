@@ -44,11 +44,11 @@ const dummySubContentHeader = {
 
 function SkillToolsLayout() {
   return (
-    <Container className="mt-1 mb-2">
+    <Container id="skills" className="mt-1 mb-2 border">
       <SubContentHeader subtitle={dummySubContentHeader.subtitle} description={dummySubContentHeader.description} />
-      <Row>
+      <Row className="border">
         {dummyData.map((item, index) => (
-          <Col key={index} sm={6} md={6} lg={3} className="col-12 mb-3">
+          <Col key={index} sm={6} md={6} lg={3} className="col-12 mb-3 border">
             <ToolCard
               image={item.image}
               title={item.title}

@@ -10,7 +10,7 @@ import imagesPhoto from "../../assets/images/Rosyihan.png";
 
 function AboutMe() {
   return (
-    <Container className="mb-2 d-flex flex-column justify-content-center" style={{ minHeight: "100vh" }}>
+    <Container className="mb-2 d-flex flex-column justify-content-center border" style={{ minHeight: "100vh" }}>
       <Row className={`${aboutMeStyles.aboutMeMt}`}>
         <Col className="mb-3" sm={12} md={6}>
           <h1 style={{ fontSize: "3.5rem" }} className={`fw-bold`}>
