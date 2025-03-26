@@ -12,6 +12,12 @@
     transition-delay: 0.5s;
 }
 
+.wrapperActive{
+    background: #2196f3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 
+    0 0 15px rgba(33, 150, 243, 0.3);
+}
+
 .btnWrapper span{
     position: absolute;
     display: block;

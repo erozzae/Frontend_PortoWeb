@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <NavigationBar />
-      <Container className="my-5">
+      <Container className="my-0">
         <AboutMe />
         <SkillToolsLayout />
         <PortofoliosLayout />

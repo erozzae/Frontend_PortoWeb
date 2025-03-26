@@ -11,6 +11,22 @@
   box-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 0 0 15px rgba(33, 150, 243, 0.3);
 }
 
+.btnCustomPrimary:hover {
+  background: #2196f3;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 0 0 15px rgba(33, 150, 243, 0.3);
+}
+
+.btnCustomSecondary {
+  background: transparent;
+  border: none;
+}
+
+.btnCustomSecondary:hover {
+  background: transparent;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 0 0 15px rgba(33, 150, 243, 0.3);
+  border: none;
+}
+
 .iconBorderPrimary {
   box-shadow: 0 0 5px rgba(33, 150, 243, 0.5), 0 0 15px rgba(33, 150, 243, 0.3);
 }
