@@ -4,10 +4,11 @@ import aboutMeStyles from "../../styles/aboutMe.module.css";
 import { Col, Row, Button, Image, Container } from "react-bootstrap";
 import imagesPhoto from "../../assets/images/Rosyihan.png";
 
-
 function AboutMe() {
   return (
-    <Container className={`${aboutMeStyles.aboutMeMt} d-flex flex-column justify-content-center mb-5`}>
+    <Container
+      className={`${aboutMeStyles.aboutMeMt} d-flex flex-column justify-content-center mb-5`}
+    >
       <Row className={``}>
         <Col className="mb-3" sm={12} md={6}>
           <h1 style={{ fontSize: "3.5rem" }} className={`fw-bold`}>
@@ -51,7 +52,9 @@ function AboutMe() {
           sm={12}
           md={6}
         >
-          <div
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
             className="rounded-top position-relative"
             style={{
               width: "300px",
@@ -73,9 +76,9 @@ function AboutMe() {
             <Image
               className="position-absolute translate-middle-x bottom-0 start-50"
               src={imagesPhoto}
-              style={{ width: "280px" }}             
+              style={{ width: "280px" }}
             />
-          </div>
+          </motion.div>
         </Col>
       </Row>
     </Container>

@@ -3,6 +3,7 @@ import ToolCard from "../components/ToolsCard/ToolCard";
 import { Col, Container, Row } from "react-bootstrap";
 import SubContentHeader from "../components/SubContentHeader/SubContentHeader";
 import skillToolsStyles from "../styles/skillTools.module.css";
+import { motion } from "motion/react";
 
 const dummyData = [
   {
@@ -45,9 +46,7 @@ const dummySubContentHeader = {
 
 function SkillToolsLayout() {
   return (
-    <Container
-      className={`d-flex flex-column justify-content-center mb-5`}
-    >
+    <Container className={`d-flex flex-column justify-content-center mb-5`}>
       <div className="">
         <SubContentHeader
           subtitle={dummySubContentHeader.subtitle}
