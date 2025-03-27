@@ -22,7 +22,7 @@ function MessageForm() {
         </Row>
         <Row>
           <Form.Group
-            className="mb-3"
+            className="mb-4"
             controlId="exampleForm.ControlTextarea1"
           >
             <Form.Label>Example textarea</Form.Label>
