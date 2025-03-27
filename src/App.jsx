@@ -16,7 +16,7 @@ function App() {
   const contactMeRef = useRef(null);
 
   const scrollToSection = (elementRef) => {
-    elementRef.current?.scrollIntoView({ behavior: "smooth"})
+    elementRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -41,7 +41,12 @@ function App() {
           <ContactmeLayout />
         </div>
       </Container>
-      <Footer />
+      <Footer
+        onAboutClick={() => scrollToSection(aboutMeRef)}
+        onSkillsClick={() => scrollToSection(skillToolsRef)}
+        onPortofoliosClick={() => scrollToSection(portofoliosRef)}
+        onContactClick={() => scrollToSection(contactMeRef)}
+      />
     </div>
   );
 }

@@ -2,11 +2,17 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 const linkStyle = {
-    textDecoration: "none",
-    color: "inherit",
-  };
+  textDecoration: "none",
+  color: "inherit",
+  cursor: "pointer",
+};
 
-function Footer() {
+function Footer({
+  onAboutClick,
+  onSkillsClick,
+  onPortofoliosClick,
+  onContactClick,
+}) {
   return (
     <footer className="bg-dark text-light py-4">
       <Container className="text-center">
@@ -18,17 +24,17 @@ function Footer() {
           </Col>
           <Col md={6}>
             <p className="mb-0">
-              <a href="#" className="text-light me-3" style={linkStyle}>
-               Home
+              <a className="text-light me-3" style={linkStyle} onClick={onAboutClick}>
+                Home
               </a>
-              <a href="#" className="text-light me-3" style={linkStyle}>
-              Skills
+              <a className="text-light me-3" style={linkStyle} onClick={onSkillsClick}>
+                Skills
               </a>
-              <a href="#" className="text-light me-3" style={linkStyle}>
-               Portofolios
+              <a className="text-light me-3" style={linkStyle} onClick={onPortofoliosClick}>
+                Portofolios
               </a>
-              <a href="#" className="text-light" style={linkStyle}>
-               Contact Me
+              <a className="text-light" style={linkStyle} onClick={onContactClick}>
+                Contact Me
               </a>
             </p>
           </Col>
