@@ -2,6 +2,7 @@ import React from "react";
 import ToolCard from "../components/ToolsCard/ToolCard";
 import { Col, Container, Row } from "react-bootstrap";
 import SubContentHeader from "../components/SubContentHeader/SubContentHeader";
+import skillToolsStyles from "../styles/skillTools.module.css";
 
 const dummyData = [
   {
@@ -44,19 +45,32 @@ const dummySubContentHeader = {
 
 function SkillToolsLayout() {
   return (
-    <Container id="skills" className="mt-1 mb-2 border">
-      <SubContentHeader subtitle={dummySubContentHeader.subtitle} description={dummySubContentHeader.description} />
-      <Row className="border">
-        {dummyData.map((item, index) => (
-          <Col key={index} sm={6} md={6} lg={3} className="col-12 mb-3 border">
-            <ToolCard
-              image={item.image}
-              title={item.title}
-              description={item.description}
-            />
-          </Col>
-        ))}
-      </Row>
+    <Container
+      className={`d-flex flex-column justify-content-center mb-5`}
+    >
+      <div className="">
+        <SubContentHeader
+          subtitle={dummySubContentHeader.subtitle}
+          description={dummySubContentHeader.description}
+        />
+        <Row className={``}>
+          {dummyData.map((item, index) => (
+            <Col
+              key={index}
+              sm={6}
+              md={6}
+              lg={3}
+              className="col-12 mb-3 px-2"
+            >
+              <ToolCard
+                image={item.image}
+                title={item.title}
+                description={item.description}
+              />
+            </Col>
+          ))}
+        </Row>
+      </div>
     </Container>
   );
 }

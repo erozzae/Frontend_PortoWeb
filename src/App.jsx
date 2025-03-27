@@ -16,10 +16,9 @@ function App() {
   const contactMeRef = useRef(null);
 
   const scrollToSection = (elementRef) => {
-    elementRef.current?.scrollIntoView({ behavior: "smooth" });
-    // elementRef.current?.scrollIntoView({behavior:'smooth'})
+    elementRef.current?.scrollIntoView({ behavior: "smooth"})
   };
-  
+
   return (
     <div>
       <NavigationBar
@@ -28,7 +27,7 @@ function App() {
         onPortofoliosClick={() => scrollToSection(portofoliosRef)}
         onContactClick={() => scrollToSection(contactMeRef)}
       />
-      <Container className="my-0">
+      <Container className="my-5">
         <div ref={aboutMeRef}>
           <AboutMe />
         </div>

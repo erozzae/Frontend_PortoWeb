@@ -48,7 +48,7 @@ const dummySubContentHeader = {
 
 function PortofoliosLayout() {
   return (
-    <Container className="shadow-sm my-1">
+    <Container className="shadow-sm mb-5">
       <SubContentHeader
         subtitle={dummySubContentHeader.subtitle}
         description={dummySubContentHeader.description}
@@ -70,7 +70,7 @@ function PortofoliosLayout() {
           <Tab.Pane eventKey="all">
             <Row>
               {dummyData.map((item, index) => (
-                <Col className="mb-4" key={index} sm={12} md={6} lg={4}>
+                <Col className="mb-3 px-2" key={index} sm={12} md={6} lg={4}>
                   <PortofolioCard
                     image={item.image}
                     title={item.title}
@@ -88,7 +88,7 @@ function PortofoliosLayout() {
                   item,
                   index // Gunakan map untuk merender elemen
                 ) => (
-                  <Col className="mb-3" key={index} sm={12} md={6} lg={4}>
+                  <Col className="mb-3 px-2" key={index} sm={12} md={6} lg={4}>
                     <PortofolioCard
                       image={item.image}
                       title={item.title}
@@ -102,7 +102,7 @@ function PortofoliosLayout() {
             {dummyData
               .filter((item) => item.category === "Mini Project")
               .map((item, index) => (
-                <Col className="mb-3" key={index} sm={12} md={6} lg={4}>
+                <Col className="mb-3 px-2" key={index} sm={12} md={6} lg={4}>
                   <PortofolioCard
                     image={item.image}
                     title={item.title}

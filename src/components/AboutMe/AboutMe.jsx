@@ -4,14 +4,11 @@ import aboutMeStyles from "../../styles/aboutMe.module.css";
 import { Col, Row, Button, Image, Container } from "react-bootstrap";
 import imagesPhoto from "../../assets/images/Rosyihan.png";
 
-// const boxImgStyle ={
-//   minWidth:""
-// }
 
 function AboutMe() {
   return (
-    <Container className="mb-2 d-flex flex-column justify-content-center border" style={{ minHeight: "100vh" }}>
-      <Row className={`${aboutMeStyles.aboutMeMt}`}>
+    <Container className={`${aboutMeStyles.aboutMeMt} d-flex flex-column justify-content-center mb-5`}>
+      <Row className={``}>
         <Col className="mb-3" sm={12} md={6}>
           <h1 style={{ fontSize: "3.5rem" }} className={`fw-bold`}>
             Hi! I am{" "}
