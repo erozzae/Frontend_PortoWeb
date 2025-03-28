@@ -41,12 +41,12 @@ const dummyData = [
 const dummySubContentHeader = {
   subtitle: "Esesential Tech I use",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda ratione laborum dolor officiis quisquam.",
+    "Here are the key technologies and tools I use to build web applications.",
 };
 
 function SkillToolsLayout() {
   return (
-    <Container className={`d-flex flex-column justify-content-center mb-5`}>
+    <Container className={`d-flex flex-column justify-content-center mb-5 border`}>
       <div className="">
         <SubContentHeader
           subtitle={dummySubContentHeader.subtitle}

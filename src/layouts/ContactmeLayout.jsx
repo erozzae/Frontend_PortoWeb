@@ -5,8 +5,8 @@ import SubContentHeader from "../components/SubContentHeader/SubContentHeader";
 import TextButton from "../components/Buttons/textButton";
 
 const dummySubContentHeader = {
-    subtitle:"Contact me for Collaboration",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi fugit quis atque magnam."
+    subtitle:"Contact Me for Collaboration",
+    description: "Feel free to reach out if you're interested in collaborating on exciting projects!"
 }
 
 function ContactmeLayout() {

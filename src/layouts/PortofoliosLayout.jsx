@@ -43,7 +43,7 @@ const dummyData = [
 const dummySubContentHeader = {
   subtitle: "My Projects",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda ratione laborum dolor officiis quisquamasdasasdacasdas adsasd.",
+    "A collection of my projects showcasing my skills in web development and problem-solving.",
 };
 
 function PortofoliosLayout() {
@@ -56,13 +56,13 @@ function PortofoliosLayout() {
       <Tab.Container defaultActiveKey="all">
         <Nav variant="tabs" className="justify-content-center mb-4">
           <Nav.Item>
-            <Nav.Link eventKey="all" style={{ color:"white" }}>Semua Project</Nav.Link>
+            <Nav.Link eventKey="all" style={{ color:"white" }}>All Projects</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="real" style={{ color:"white" }}>Real Project</Nav.Link>
+            <Nav.Link eventKey="real" style={{ color:"white" }}>projects</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="mini" style={{ color:"white" }}>Mini Project</Nav.Link>
+            <Nav.Link eventKey="mini" style={{ color:"white" }}>Mini Projects</Nav.Link>
           </Nav.Item>
         </Nav>
 
