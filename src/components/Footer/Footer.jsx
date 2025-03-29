@@ -19,7 +19,7 @@ function Footer({
         <Row>
           <Col md={6} className="mb-3 mb-md-0">
             <p className="mb-0">
-              &copy; {new Date().getFullYear()} Your Name. All Rights Reserved.
+              &copy; {new Date().getFullYear()} Rosyihan. All Rights Reserved.
             </p>
           </Col>
           <Col md={6}>

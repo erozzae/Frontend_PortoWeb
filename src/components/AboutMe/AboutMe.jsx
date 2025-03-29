@@ -39,7 +39,7 @@ function AboutMe() {
             </div>
             <div className="socmed d-flex ">
               <div className={`${styles.iconBorderPrimary} p-2 rounded`}>
-                <a href="https://www.linkedin.com/in/rosyihan-m" target="_blank" >
+                <a href="https://www.linkedin.com/in/rosyihan-m" target="_blank" rel="noopener noreferrer">
                   <i
                     className="bx bxl-linkedin"
                     style={{ fontSize: "30px" }}
@@ -47,12 +47,12 @@ function AboutMe() {
                 </a>
               </div>
               <div className={`${styles.iconBorderPrimary} ms-3 p-2 rounded`}>
-                <a href="https://github.com/erozzae" target="_blank" >
+                <a href="https://github.com/erozzae" target="_blank" rel="noopener noreferrer">
                   <i className="bx bxl-github" style={{ fontSize: "30px" }}></i>
                 </a>
               </div>
               <div className={`${styles.iconBorderPrimary} ms-3 p-2 rounded`}>
-                <a href="mailto:rosihann14@gmail.com" target="_blank">
+                <a href="mailto:rosihann14@gmail.com" target="_blank" rel="noopener noreferrer">
                   <i className="bx bxl-gmail" style={{ fontSize: "30px" }}></i>
                 </a>
               </div>
