@@ -9,7 +9,6 @@ function MessageForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailJs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -32,7 +31,7 @@ function MessageForm() {
     <>
       <Form ref={form} onSubmit={sendEmail}>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} lg={6}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -43,10 +42,21 @@ function MessageForm() {
               />
             </Form.Group>
           </Col>
+          <Col xs={12} lg={6}>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                name="name"
+                className="f-input"
+                type="text"
+                placeholder="name"
+              />
+            </Form.Group>
+          </Col>
         </Row>
         <Row>
           <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Example textarea</Form.Label>
+            <Form.Label>Message</Form.Label>
             <Form.Control as="textarea" name="message" rows={3} />
           </Form.Group>
           <div className="px-2">
