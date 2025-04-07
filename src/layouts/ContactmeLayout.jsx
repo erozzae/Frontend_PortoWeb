@@ -11,7 +11,7 @@ const dummySubContentHeader = {
 
 function ContactmeLayout() {
   return (
-    <Container className="mb-3">
+    <Container className="mb-3 border">
       <Row>
         <Col className="d-flex flex-column justify-content-between" xs={12} md={6}>
             <SubContentHeader  subtitle={dummySubContentHeader.subtitle} description={dummySubContentHeader.description}/>

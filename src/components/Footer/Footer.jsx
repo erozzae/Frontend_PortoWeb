@@ -14,7 +14,7 @@ function Footer({
   onContactClick,
 }) {
   return (
-    <footer className="bg-dark text-light py-4">
+    <footer className="bg-dark text-light py-4 border">
       <Container className="text-center">
         <Row>
           <Col md={6} className="mb-3 mb-md-0">

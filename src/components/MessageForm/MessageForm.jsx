@@ -3,32 +3,35 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import styles from "../../styles/global.module.css";
 import emailJs from "@emailjs/browser";
 import { useRef } from "react";
+import { useToast } from "../../contexts/ToastContext";
 
 function MessageForm() {
   const form = useRef();
+  const { showToast, toggleToast } = useToast();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailJs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current,
-        {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-        }
-      )
-      .then(
-        () => {
-          console.log("success!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+
+    // emailJs
+    //   .sendForm(
+    //     import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    //     import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    //     form.current,
+    //     {
+    //       publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+    //     }
+    //   )
+    //   .then(
+    //     () => {
+    //       console.log("success!");
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error.text);
+    //     }
+    //   );
   };
   return (
-    <>
+    <div>
       <Form ref={form} onSubmit={sendEmail}>
         <Row>
           <Col xs={12} lg={6}>
@@ -61,15 +64,16 @@ function MessageForm() {
           </Form.Group>
           <div className="px-2">
             <Button
-              type="submit"
+              type="button"
               className={`${styles.btnCustomPrimary} w-100`}
+              onClick={toggleToast}
             >
-              Submit
+              {showToast ? "Sembunyikan Toast" : "Tampilkan Toast"}
             </Button>
           </div>
         </Row>
       </Form>
-    </>
+    </div>
   );
 }
 
