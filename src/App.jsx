@@ -10,8 +10,9 @@ import ContactmeLayout from "./layouts/ContactmeLayout";
 import Footer from "./components/Footer/Footer";
 import NormalToast from "./components/Toasts/NormalToast";
 import { ToastProvider, useToast } from "./contexts/ToastContext";
+import DangerToast from "./components/Toasts/DangerToast";
 
-const ToastSection = () => {
+const NormalToastSection = () => {
   const { showToast, setShowToast } = useToast();
   return (
     <div>
@@ -31,9 +32,6 @@ function App() {
   const portofoliosRef = useRef(null);
   const contactMeRef = useRef(null);
 
-  // const [showToast, setShowToast] = useState(false); //delete
-  // const toggleToast = () => setShowToast(!showToast); //delete
-
   const scrollToSection = (elementRef) => {
     elementRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -49,7 +47,7 @@ function App() {
         />
 
         <Container className="my-5">
-          <ToastSection />
+          <NormalToastSection />
           <div ref={aboutMeRef}>
             <AboutMe />
           </div>
