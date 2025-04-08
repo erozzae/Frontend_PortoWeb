@@ -8,23 +8,8 @@ import SkillToolsLayout from "./layouts/SkillToolsLayout";
 import PortofoliosLayout from "./layouts/PortofoliosLayout";
 import ContactmeLayout from "./layouts/ContactmeLayout";
 import Footer from "./components/Footer/Footer";
-import NormalToast from "./components/Toasts/NormalToast";
-import { ToastProvider, useToast } from "./contexts/ToastContext";
-import DangerToast from "./components/Toasts/DangerToast";
-
-const NormalToastSection = () => {
-  const { showToast, setShowToast } = useToast();
-  return (
-    <div>
-      <NormalToast
-        show={showToast}
-        onClose={() => setShowToast(false)}
-        title="Success !"
-        message="Message sent successfully"
-      />
-    </div>
-  );
-};
+import { ToastProvider } from "./contexts/ToastContext";
+import ToastManager from "./components/Toasts/ToastManager";
 
 function App() {
   const aboutMeRef = useRef(null);
@@ -45,9 +30,8 @@ function App() {
           onPortofoliosClick={() => scrollToSection(portofoliosRef)}
           onContactClick={() => scrollToSection(contactMeRef)}
         />
-
+        <ToastManager/>
         <Container className="my-5">
-          <NormalToastSection />
           <div ref={aboutMeRef}>
             <AboutMe />
           </div>

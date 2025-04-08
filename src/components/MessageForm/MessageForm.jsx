@@ -9,12 +9,8 @@ import useFormContactUsValidation from "../../hooks/useFormContactUsValidation";
 function MessageForm() {
   const form = useRef();
   const [isBtnDisabled, setIsBtnDisabled] = useState(false);
-  const { showToast, toggleToast } = useToast();
-  const {
-    errors,
-    validated,
-    validateForm,
-  } = useFormContactUsValidation();
+  const { showPrimaryToast, showDangerToast } = useToast();
+  const { errors, validated, validateForm } = useFormContactUsValidation();
 
   const sendEmail = () => {
     setIsBtnDisabled(true);
@@ -30,14 +26,16 @@ function MessageForm() {
       )
       .then(
         () => {
-          toggleToast();
+          showPrimaryToast();
+
           setTimeout(() => {
-            showToast;
             setIsBtnDisabled(false);
             console.log("success");
           }, 0);
         },
         (error) => {
+          showDangerToast();
+          setIsBtnDisabled(false);
           console.log("FAILED...", error.text);
         }
       );
@@ -56,9 +54,9 @@ function MessageForm() {
     } catch (error) {
       // Handle error
       console.error("Error sending email:", error);
-      alert("Gagal mengirim pesan. Silakan coba lagi.");
+      // showPrimaryToast()
     } finally {
-      form.current.reset();
+      // form.current.reset();
     }
   };
 
