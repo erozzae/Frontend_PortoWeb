@@ -5,6 +5,8 @@ import emailJs from "@emailjs/browser";
 import { useRef } from "react";
 import { useToast } from "../../contexts/ToastContext";
 import useFormContactUsValidation from "../../hooks/useFormContactUsValidation";
+import { Reveal } from "../Utils/Reveal";
+import { motion } from "motion/react";
 
 function MessageForm() {
   const form = useRef();
@@ -66,15 +68,25 @@ function MessageForm() {
         <Row>
           <Col xs={12} lg={6}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                name="email"
-                className="f-input"
-                type="email"
-                placeholder="name@example.com"
-                required
-                isInvalid={!!errors.email}
-              />
+              <Reveal>
+                <Form.Label>Email address</Form.Label>
+              </Reveal>
+              <motion.div
+                initial={{ opacity: 0, y: 75 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2, ease: "easeIn" }}
+                viewport={{ once: true }}
+              >
+                <Form.Control
+                  name="email"
+                  className="f-input"
+                  type="email"
+                  placeholder="name@example.com"
+                  required
+                  isInvalid={!!errors.email}
+                />
+              </motion.div>
+
               <Form.Control.Feedback type="invalid">
                 {errors.email}
               </Form.Control.Feedback>
@@ -82,16 +94,26 @@ function MessageForm() {
           </Col>
           <Col xs={12} lg={6}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                name="name"
-                className="f-input"
-                type="text"
-                placeholder="name"
-                required
-                maxLength={15}
-                isInvalid={!!errors.name}
-              />
+              <Reveal>
+                <Form.Label>Name</Form.Label>
+              </Reveal>
+              <motion.div
+                initial={{ opacity: 0, y: 75 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2, ease: "easeIn" }}
+                viewport={{ once: true }}
+              >
+                <Form.Control
+                  name="name"
+                  className="f-input"
+                  type="text"
+                  placeholder="name"
+                  required
+                  maxLength={15}
+                  isInvalid={!!errors.name}
+                />
+              </motion.div>
+
               <Form.Control.Feedback type="invalid">
                 {errors.name}
               </Form.Control.Feedback>
@@ -100,27 +122,38 @@ function MessageForm() {
         </Row>
         <Row>
           <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Message</Form.Label>
-            <Form.Control
-              as="textarea"
-              name="message"
-              rows={3}
-              required
-              isInvalid={!!errors.message}
-              className={styles.formTextarea}
-            />
+            <Reveal>
+              <Form.Label>Message</Form.Label>
+            </Reveal>
+            <motion.div
+              initial={{ opacity: 0, y: 75 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2, ease: "easeIn" }}
+              viewport={{ once: true }}
+            >
+              <Form.Control
+                as="textarea"
+                name="message"
+                rows={3}
+                required
+                isInvalid={!!errors.message}
+                className={styles.formTextarea}
+              />
+            </motion.div>
             <Form.Control.Feedback type="invalid">
               {errors.message}
             </Form.Control.Feedback>
           </Form.Group>
           <div className="px-2">
-            <Button
-              type="submit"
-              className={`${styles.btnCustomPrimary} w-100`}
-              disabled={isBtnDisabled}
-            >
-              Submit
-            </Button>
+            <Reveal>
+              <Button
+                type="submit"
+                className={`${styles.btnCustomPrimary} w-100`}
+                disabled={isBtnDisabled}
+              >
+                Submit
+              </Button>
+            </Reveal>
           </div>
         </Row>
       </Form>

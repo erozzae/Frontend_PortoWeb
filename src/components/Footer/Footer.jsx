@@ -1,5 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Reveal } from "../Utils/Reveal";
+import styles from "../../styles/global.module.css"
 
 const linkStyle = {
   textDecoration: "none",
@@ -14,29 +16,66 @@ function Footer({
   onContactClick,
 }) {
   return (
-    <footer className="bg-dark text-light py-4 border">
+    <footer className="bg-dark text-light py-4">
       <Container className="text-center">
         <Row>
-          <Col md={6} className="mb-3 mb-md-0">
-            <p className="mb-0">
-              &copy; {new Date().getFullYear()} Rosyihan. All Rights Reserved.
-            </p>
+          <Col
+            md={6}
+            className="mb-3 mb-md-0 d-flex justify-content-center"
+          >
+            <Reveal>
+              <p className="mb-0 ">
+                &copy; {new Date().getFullYear()} Rosyihan. All Rights Reserved.
+              </p>
+            </Reveal>
           </Col>
           <Col md={6}>
-            <p className="mb-0">
-              <a className="text-light me-3" style={linkStyle} onClick={onAboutClick}>
-                Home
-              </a>
-              <a className="text-light me-3" style={linkStyle} onClick={onSkillsClick}>
-                Skills
-              </a>
-              <a className="text-light me-3" style={linkStyle} onClick={onPortofoliosClick}>
-                Portofolios
-              </a>
-              <a className="text-light" style={linkStyle} onClick={onContactClick}>
-                Contact Me
-              </a>
-            </p>
+            <div className="mb-0 d-flex justify-content-center flex-wrap">
+              <Reveal>
+                <div>
+                  <a
+                    className={`${styles.fs_normal} text-light me-3`}
+                    style={linkStyle}
+                    onClick={onAboutClick}
+                  >
+                    Home
+                  </a>
+                </div>
+              </Reveal>
+              <Reveal>
+                <div>
+                  <a
+                    className={`${styles.fs_normal} text-light me-3`}
+                    style={linkStyle}
+                    onClick={onSkillsClick}
+                  >
+                    Skills
+                  </a>
+                </div>
+              </Reveal>
+              <Reveal>
+                <div>
+                  <a
+                   className={`${styles.fs_normal} text-light me-3`}
+                    style={linkStyle}
+                    onClick={onPortofoliosClick}
+                  >
+                    Portofolios
+                  </a>
+                </div>
+              </Reveal>
+              <Reveal>
+                <div>
+                  <a
+                   className={`${styles.fs_normal} text-light me-3`}
+                    style={linkStyle}
+                    onClick={onContactClick}
+                  >
+                    Contact Me
+                  </a>
+                </div>
+              </Reveal>
+            </div>
           </Col>
         </Row>
       </Container>

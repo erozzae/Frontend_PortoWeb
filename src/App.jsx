@@ -10,6 +10,7 @@ import ContactmeLayout from "./layouts/ContactmeLayout";
 import Footer from "./components/Footer/Footer";
 import { ToastProvider } from "./contexts/ToastContext";
 import ToastManager from "./components/Toasts/ToastManager";
+import { motion } from "motion/react";
 
 function App() {
   const aboutMeRef = useRef(null);
@@ -21,6 +22,15 @@ function App() {
     elementRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  //   <motion.div
+  //   initial={{ opacity: 0, y: 75 }}
+  //   whileInView={{ opacity: 1, y: 0 }}
+  //   transition={{
+  //     duration: 0.5,
+  //     delay: 0.25,
+  //   }}
+  // ></motion.div>
+
   return (
     <div>
       <ToastProvider>
@@ -30,7 +40,7 @@ function App() {
           onPortofoliosClick={() => scrollToSection(portofoliosRef)}
           onContactClick={() => scrollToSection(contactMeRef)}
         />
-        <ToastManager/>
+        <ToastManager />
         <Container className="my-5">
           <div ref={aboutMeRef}>
             <AboutMe />

@@ -15,6 +15,7 @@ import bootstrapLogo from "../assets/images/devToolsLogo/bootstrap.png";
 import mysqlLogo from "../assets/images/devToolsLogo/mysql.png";
 import postgreLogo from "../assets/images/devToolsLogo/postgre.png";
 import gitLogo from "../assets/images/devToolsLogo/git.png";
+import { Reveal } from "../components/Utils/Reveal";
 
 const dummyData = [
   {
@@ -82,9 +83,7 @@ const dummySubContentHeader = {
 
 function SkillToolsLayout() {
   return (
-    <Container
-      className={`d-flex flex-column justify-content-center mb-5 border`}
-    >
+    <Container className={`d-flex flex-column justify-content-center mb-5`}>
       <div className="">
         <SubContentHeader
           subtitle={dummySubContentHeader.subtitle}
@@ -93,11 +92,11 @@ function SkillToolsLayout() {
         <Row className={``}>
           {dummyData.map((item, index) => (
             <Col key={index} sm={6} md={6} lg={3} className="col-12 mb-3 px-2">
-              <ToolCard
-                image={item.image}
-                title={item.title}
-                description={item.description}
-              />
+                <ToolCard
+                  image={item.image}
+                  title={item.title}
+                  description={item.description}
+                />
             </Col>
           ))}
         </Row>

@@ -3,6 +3,7 @@ import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import PortofolioCard from "./../components/PortofoliosCard/PortofolioCard";
 import SubContentHeader from "../components/SubContentHeader/SubContentHeader";
 import styles from "./../styles/global.module.css";
+import { Reveal } from "../components/Utils/Reveal";
 
 const dummyData = [
   {
@@ -48,22 +49,34 @@ const dummySubContentHeader = {
 
 function PortofoliosLayout() {
   return (
-    <Container className="shadow-sm mb-5 border">
+    <Container className="shadow-sm mb-5 ">
       <SubContentHeader
         subtitle={dummySubContentHeader.subtitle}
         description={dummySubContentHeader.description}
       />
       <Tab.Container defaultActiveKey="all">
         <Nav variant="tabs" className="justify-content-center mb-4">
-          <Nav.Item>
-            <Nav.Link eventKey="all" style={{ color:"white" }}>All Projects</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="real" style={{ color:"white" }}>projects</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="mini" style={{ color:"white" }}>Mini Projects</Nav.Link>
-          </Nav.Item>
+          <Reveal>
+            <Nav.Item>
+              <Nav.Link eventKey="all" style={{ color: "white" }}>
+                All Projects
+              </Nav.Link>
+            </Nav.Item>
+          </Reveal>
+          <Reveal>
+            <Nav.Item>
+              <Nav.Link eventKey="real" style={{ color: "white" }}>
+                projects
+              </Nav.Link>
+            </Nav.Item>
+          </Reveal>
+          <Reveal>
+            <Nav.Item>
+              <Nav.Link eventKey="mini" style={{ color: "white" }}>
+                Mini Projects
+              </Nav.Link>
+            </Nav.Item>
+          </Reveal>
         </Nav>
 
         <Tab.Content className="mt-3">
