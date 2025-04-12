@@ -12,7 +12,7 @@ function AboutMe() {
       className={`${aboutMeStyles.aboutMeMt} d-flex flex-column justify-content-center mb-5`}
     >
       <Row className={``}>
-        <Col className="mb-3" sm={12} md={6}>
+        <Col className="mb-4" sm={12} md={6}>
           <Reveal>
             <h1 style={{ fontSize: "3.5rem" }} className={`fw-bold`}>
               Hi! I am{" "}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Form, Row } from "react-bootstrap";
+import { Button, Col, Form, Row, Spinner } from "react-bootstrap";
 import styles from "../../styles/global.module.css";
 import emailJs from "@emailjs/browser";
 import { useRef } from "react";
@@ -11,11 +11,13 @@ import { motion } from "motion/react";
 function MessageForm() {
   const form = useRef();
   const [isBtnDisabled, setIsBtnDisabled] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const { showPrimaryToast, showDangerToast } = useToast();
   const { errors, validated, validateForm } = useFormContactUsValidation();
 
   const sendEmail = () => {
     setIsBtnDisabled(true);
+    setIsLoading(true);
 
     emailJs
       .sendForm(
@@ -32,12 +34,13 @@ function MessageForm() {
 
           setTimeout(() => {
             setIsBtnDisabled(false);
+            setIsLoading(false);
             console.log("success");
           }, 0);
         },
         (error) => {
           showDangerToast();
-          setIsBtnDisabled(false);
+          setIsLoading(false);
           console.log("FAILED...", error.text);
         }
       );
@@ -151,9 +154,11 @@ function MessageForm() {
                 className={`${styles.btnCustomPrimary} w-100`}
                 disabled={isBtnDisabled}
               >
-                Submit
+                Submit  {isLoading && <Spinner animation="border" size="sm" />}
               </Button>
+              
             </Reveal>
+          
           </div>
         </Row>
       </Form>
